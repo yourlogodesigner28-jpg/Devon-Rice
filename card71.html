@@ -7,7 +7,47 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="flex justify-center items-center h-screen bg-neutral-800 font-serif">
+ <!-- ================= MODAL ================= -->
+  <div id="agencyModal" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+    
+    <div class="bg-neutral-900 rounded-xl overflow-hidden w-[90%] max-w-md shadow-2xl animate-fadeIn">
 
+      <!-- Full Width Image -->
+      <img 
+        src="./assets/agency.jpg" 
+        alt="Agency Logo"
+        class="w-full h-56 object-cover"
+      >
+
+      <!-- Modal Content -->
+      <div class="p-6 text-center">
+
+        <h2 class="text-2xl font-bold text-yellow-400 mb-4">
+          Official Celebrity Management
+        </h2>
+
+        <p class="text-gray-300 leading-relaxed mb-4">
+          This platform is officially managed by the creative agency representing
+          <span class="text-white font-semibold">Devon Rice</span>.
+        </p>
+
+        <p class="text-gray-400 leading-relaxed mb-6">
+          We manage all memberships, bookings, fan engagement, and official
+          communication to guarantee a safe, secure, and trusted experience
+          for both the celebrity and supporters.
+        </p>
+
+        <button
+          onclick="closeModal()"
+          class="w-full py-3 bg-yellow-400 text-black font-bold rounded-md hover:bg-yellow-500 transition"
+        >
+          Continue
+        </button>
+
+      </div>
+    </div>
+  </div>
+  
   <div id="card-container" class="flex flex-col items-center space-y-6">
     <!-- Fan Card -->
     <div id="details-card" class="relative bg-neutral-900 text-yellow-400 p-6 rounded-xl shadow-lg w-80 text-center border border-yellow-400">
